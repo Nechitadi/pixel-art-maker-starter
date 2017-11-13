@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    background-color: #f0ffff;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+    font-family: 'Audiowide', cursive;
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    font-family: 'Audiowide', cursive;
+    width: 6em;
+}
+
+form {
+    font-family: 'Audiowide', cursive;
+}
