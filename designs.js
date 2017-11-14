@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	//variables declarations
 	let gridWidth = 1;
 	let gridHeight = 1;
 	let submitSize = $('#submit');
@@ -13,7 +14,7 @@ $(document).ready(function() {
 		console.log(color);
 	});
 
-	//Function that assigns the height and width from input fields to variables when the Submit button is clicked.
+	//assigns the height and width from input fields to variables when the Submit button is clicked.
 	submitSize.on('click', function() {
 		$('tr').remove();
 		gridHeight = inputHeight.val();
@@ -22,7 +23,7 @@ $(document).ready(function() {
 		makeGrid();
 	});	
 
-	//Function that creates a table with the height and with that were input
+	//grid generation based on user input
 	function makeGrid() {
 		for(let h=0; h<gridHeight; h++) {
 			let newRow = $('<tr></tr>'); 
@@ -33,7 +34,7 @@ $(document).ready(function() {
 		}
 	}
 
-	//Function that assigns the color from color picker to the clicked table cell
+	//assigns the color from color picker to the clicked table cell
 	pixelCanvas.on('mouseover', 'td', function() {
 		$('td').click(function(){
 	    $(this).css('background-color', `${color}`);
